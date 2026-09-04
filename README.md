@@ -34,10 +34,12 @@ ConvoKitConversationList(client: client) { conversation in
     selectedConversationId = conversation.id
 }
 
-try ConvoKitConversation(
+if let chat = try? ConvoKitConversation(
     client: client,
     conversationId: selectedConversationId
-)
+) {
+    chat
+}
 ```
 
 Read the [native Swift documentation](https://convokit.app/docs/swift-sdk), [SwiftUI documentation](https://convokit.app/docs/swift-ui), and [public example app](https://github.com/ConvoKitApp/ConvoKit-Swift-UI-Examples).
