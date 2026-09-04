@@ -10,7 +10,7 @@ In Xcode, choose **File → Add Package Dependencies** and enter:
 https://github.com/ConvoKitApp/ConvoKit-Swift-Package
 ```
 
-Select version `0.1.0` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
+Select version `0.1.1` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
 
 ```swift
 import ConvoKit
@@ -42,4 +42,4 @@ try ConvoKitConversation(
 
 Read the [native Swift documentation](https://convokit.app/docs/swift-sdk), [SwiftUI documentation](https://convokit.app/docs/swift-ui), and [public example app](https://github.com/ConvoKitApp/ConvoKit-Swift-UI-Examples).
 
-Binary releases are served from [swift.convokit.app](https://swift.convokit.app), not GitHub Pages or R2.
+Binary releases are served from [convokit.app](https://convokit.app/artifacts/swift/), not GitHub Pages or R2.

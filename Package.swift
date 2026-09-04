@@ -2,7 +2,7 @@
 import PackageDescription
 
 let version = "0.1.0"
-let artifactRoot = "https://swift.convokit.app"
+let artifactRoot = "https://convokit.app/artifacts/swift"
 
 let package = Package(
     name: "ConvoKit",
