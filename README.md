@@ -10,7 +10,7 @@ In Xcode, choose **File → Add Package Dependencies** and enter:
 https://github.com/ConvoKitApp/ConvoKit-Swift-Package
 ```
 
-Select version `0.1.1` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
+Select version `0.1.2` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
 
 ```swift
 import ConvoKit
