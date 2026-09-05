@@ -10,13 +10,12 @@ In Xcode, choose **File → Add Package Dependencies** and enter:
 https://github.com/ConvoKitApp/ConvoKit-Swift-Package
 ```
 
-Select version `0.1.2` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
+Select version `0.1.4` or newer. Add `ConvoKit` for the core client, or add `ConvoKitUI` to use both the core client and SwiftUI components. Requires iOS 15+.
 
 ```swift
 import ConvoKit
 
 let client = try ConvoKitClient(
-    backendURL: URL(string: "https://api.your-convokit-backend.com")!,
     clientId: "your-public-client-id"
 ) { appUserId in
     try await yourBackend.issueConvoKitToken(appUserId: appUserId)
@@ -26,6 +25,9 @@ try await client.connectUser(currentUser.id)
 ```
 
 The token provider calls your authenticated backend. Never put a ConvoKit client secret in an iOS app.
+
+The SDK uses the managed `https://api.convokit.app` endpoint automatically.
+Pass `backendURL` only for local testing or a self-hosted deployment.
 
 ```swift
 import ConvoKitUI

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- Use the managed `https://api.convokit.app` endpoint by default.
+- Keep endpoint overrides available for local testing and self-hosting.
+
 ## 0.1.2
 
 - Add distributable Swift modules to the iOS device and simulator XCFrameworks.
