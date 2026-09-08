@@ -1,7 +1,7 @@
 // swift-tools-version: 5.9
 import PackageDescription
 
-let version = "0.2.3"
+let version = "0.3.0"
 let artifactRoot = "https://convokit.app/artifacts/swift"
 
 let package = Package(
@@ -15,12 +15,12 @@ let package = Package(
         .binaryTarget(
             name: "ConvoKit",
             url: "\(artifactRoot)/convokit/\(version)/ConvoKit.xcframework.zip",
-            checksum: "4e6476b9f3557307f924a4888a4e41ece386ad7a6da943f5a1cc651edef539a1"
+            checksum: "c962b8bf7eb07bdec198e6fdc025b513410c2ff719d3170cf6ac85f2ae3af4b1"
         ),
         .binaryTarget(
             name: "ConvoKitUI",
             url: "\(artifactRoot)/ui/\(version)/ConvoKitUI.xcframework.zip",
-            checksum: "df85f9de4a0953a56ae3a6d3aba36c0a96a4d60530ca30698303b6de6d1333a9"
+            checksum: "ac4aa08d951feca464861b2e7c26d8938a6b77b8a8650a4976c5157078075aab"
         ),
     ]
 )
