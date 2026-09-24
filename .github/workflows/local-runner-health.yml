@@ -1,0 +1,23 @@
+name: Local runner health
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on:
+      group: ConvoKit Local Mac
+      labels: [self-hosted, macOS, ARM64, convokit-mac]
+    steps:
+      - name: Verify local toolchain
+        run: |
+          test "$RUNNER_OS" = macOS
+          test "$RUNNER_ARCH" = ARM64
+          command -v swift
+          command -v flutter
+          command -v node
+          swift --version
+          node --version
